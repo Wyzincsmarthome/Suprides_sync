@@ -1,8 +1,8 @@
 {
   "suprides": {
-    "user": "geral@wyzinc.pt",
-    "password": "Wyzinc6368"
-  },
+  "username": "admin@suprides.pt",
+  "password": "senha123"
+}
   "shopify": {
     "access_token": "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",
     "store_domain": "08b4f4-5f.myshopify.com"
