@@ -1,9 +1,10 @@
 import requests
 import json
+from urllib.parse import quote_plus
 
 def get_product_by_ean(ean, config):
-    user = config["suprides"]["user"]
-    password = config["suprides"]["password"]
+    user = quote_plus(config["suprides"]["user"])
+    password = quote_plus(config["suprides"]["password"])
     url = f"https://www.suprides.pt/rest/V1/integration/products-list?user={user}&password={password}&EAN={ean}"
 
     response = requests.get(url)
